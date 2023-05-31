@@ -15,7 +15,6 @@
     display: grid;
     grid-gap: 10px;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
 }
 
 .card {
@@ -30,4 +29,16 @@
 
 .card img {
     width: 100%;
+}
+
+@media (max-width: 840px) {
+    .cardContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .cardContainer {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
