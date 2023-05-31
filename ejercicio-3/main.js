@@ -5,17 +5,19 @@ let btn = document.getElementById("resolver");
 let resultado = document.getElementById("resultado");
 
 btn.addEventListener("click", () => {
+    let numero1 = parseInt(num1.value);
+    let numero2 = parseInt(num2.value);
     if (operation.value === "+") {
-        resultado.innerHTML = `Resultado: ${parseInt(num1.value) + parseInt(num2.value)}`
+        resultado.innerHTML = `Resultado: ${numero1 + numero2}`
     }
     if (operation.value === "-") {
-        resultado.innerHTML = `Resultado: ${parseInt(num1.value) - parseInt(num2.value)}`
+        resultado.innerHTML = `Resultado: ${numero1 - numero2}`
     }
     if (operation.value === ".") {
-        resultado.innerHTML = `Resultado: ${parseInt(num1.value) * parseInt(num2.value)}`
+        resultado.innerHTML = `Resultado: ${numero1 * numero2}`
     }
     if (operation.value === ":") {
-        resultado.innerHTML = `Resultado: ${parseInt(num1.value) / parseInt(num2.value)}`
+        resultado.innerHTML = `Resultado: ${numero1 / numero2}`
     }
 })
 
